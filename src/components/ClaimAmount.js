@@ -13,8 +13,8 @@ export const ClaimAmount=({data,setData})=>
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
           Date
         </label>
-        <DatePicker selected={data.date}  onChange={(e)=>setData({...data,date: e.target.value})}
-            placeholder='DD/MM/YYYY'  classname="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 "id="grid-first-name" type="text" />
+        <input value={data.date}  onChange={(e)=>setData({...data,date: e.target.value})}
+            placeholder='DD/MM/YYYY'  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 "id="grid-date" type="text" />
        </div>
       <div class="w-full md:w-1/2 px-3">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
@@ -23,7 +23,7 @@ export const ClaimAmount=({data,setData})=>
         <input
          onChange={(e)=>setData({...data,time: e.target.value})}
          value = {data.time}
-        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder='HH:MM'/>
+        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-time" type="text" placeholder='HH:MM'/>
       </div>
     </div>
     <div clas="block">
